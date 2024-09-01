@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chatbots</title>
+    <title>tobeherefor-you</title>
      <style>
-        /* Basic reset and styling */
+
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Consolas', 'Courier New', Courier, monospace; /* Console-like font */
+            font-family: 'Consolas', 'Courier New', Courier, monospace; 
             background: url('https://i.pinimg.com/originals/6d/d0/84/6dd084a91a77db1bb147f78db22cb51d.gif') no-repeat center center fixed;
             background-size: cover;
             color: #e0e0e0;
-            overflow-x: hidden; /* Hide horizontal scrollbar */
+            overflow-x: hidden;
         }
 
-        /* Centered title and link styling */
+
         .header {
             text-align: center;
             padding: 20px;
@@ -28,33 +28,33 @@
             font-size: 2em;
             color: #14215;
             margin: 0;
-            text-shadow: 0 0 10px #141997; /* Glowing effect */
+            text-shadow: 0 0 10px #141997; 
             transition: color 0.3s ease, text-shadow 0.3s ease;
         }
 
         .header h1:hover {
-            color: #87cefa; /* Light blue on hover */
-            text-shadow: 0 0 15px #87cefa; /* Light blue glow on hover */
+            color: #87cefa; 
+            text-shadow: 0 0 15px #87cefa; 
         }
 
         .header a {
         display: block;
         font-size: 1.2em;
-        color: #ffffff; /* White color */
+        color: #ffffff; 
         text-decoration: none;
         margin-top: 10px;
-        text-shadow: 0 0 10px #ffffff; /* Glowing effect */
+        text-shadow: 0 0 10px #ffffff; 
         transition: color 0.3s ease, text-shadow 0.3s ease;
         }
 
          .header a:hover {
-          color: #87cefa; /* Light blue on hover */
-          text-shadow: 0 0 15px #87cefa; /* Light blue glow on hover */
+          color: #87cefa; 
+          text-shadow: 0 0 15px #87cefa; 
            text-decoration: underline;
           }
 
 
-        /* Styling for the iframe with translucent square */
+
         .terminal {
             display: flex;
             justify-content: center;
@@ -69,16 +69,16 @@
             width: 100%;
             max-width: 850px;
             height: 450px;
-            border: 5px solid rgba(255, 255, 255, 0.5); /* Translucent square */
+            border: 5px solid rgba(255, 255, 255, 0.5); 
             border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+            background-color: rgba(0, 0, 0, 0.5); 
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             transition: box-shadow 0.3s ease;
-            margin: 0 auto; /* Center the iframe container */
+            margin: 0 auto; 
         }
 
         .iframe-container:hover {
-            box-shadow: 0 7px 20px rgba(255, 255, 255, 0.5); /* Light blue glow on hover */
+            box-shadow: 0 7px 20px rgba(255, 255, 255, 0.5);
         }
 
         iframe {
@@ -88,7 +88,7 @@
             border-radius: 10px;
         }
 
-        /* Styling for the content sections */
+     
         .content {
             padding: 20px;
             max-width: 1200px;
@@ -96,27 +96,27 @@
         }
 
         .section-container {
-            border: 1px solid rgba(255, 255, 255, 0.3); /* Translucent border */
+            border: 1px solid rgba(255, 255, 255, 0.3); 
             border-radius: 15px;
-            background: rgba(0, 0, 0, 0.6); /* Translucent background */
+            background: rgba(0, 0, 0, 0.6); 
             padding: 20px;
             margin-bottom: 20px;
-            backdrop-filter: blur(10px); /* Blurry effect */
+            backdrop-filter: blur(10px); 
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .section-container:hover {
-            box-shadow: 0 7px 20px rgba(20, 25, 151, 0.8); /* Light blue glow on hover */
+            box-shadow: 0 7px 20px rgba(20, 25, 151, 0.8);
         }
 
         hr {
-            border: 1px solid rgba(255, 255, 255, 0.3); /* Translucent HR */
+            border: 1px solid rgba(255, 255, 255, 0.3);
             margin: 20px 0;
         }
 
         h2 {
-            color: #141997; /* Extreme blue */
-            text-shadow: 0 0 10px #141997; /* Glowing effect */
+            color: #141997;
+            text-shadow: 0 0 10px #141997;
         }
 
         pre {
@@ -146,22 +146,22 @@
         }
 
         .profile img:hover {
-            filter: brightness(1.2); /* Lighten profile picture on hover */
+            filter: brightness(1.2); 
         }
 
         .profile h2 {
-            color: #141997; /* Extreme blue */
+            color: #141997; 
             margin: 10px 0 0;
             font-size: 2em;
             transition: color 0.3s ease, text-shadow 0.3s ease;
         }
 
         .profile h2:hover {
-            color: #87cefa; /* Light blue on hover */
-            text-shadow: 0 0 15px #87cefa; /* Light blue glow on hover */
+            color: #87cefa; 
+            text-shadow: 0 0 15px #87cefa; 
         }
 
-        /* Styling for the button and message */
+
         .button-container {
             text-align: center;
             margin-top: 20px;
@@ -171,7 +171,7 @@
             padding: 10px 20px;
             font-size: 1em;
             color: #fff;
-            background-color: #141997; /* Extreme blue */
+            background-color: #141997;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -180,50 +180,34 @@
         }
 
         .button-container button:hover {
-            background-color: #87cefa; /* Light blue on hover */
-            box-shadow: 0 4px 8px rgba(0, 0, 255, 0.5); /* Light blue glow on hover */
+            background-color: #87cefa; 
+            box-shadow: 0 4px 8px rgba(0, 0, 255, 0.5);
         }
 
         .cake-message {
             display: none;
             margin-top: 10px;
             font-size: 1.2em;
-            color: #87cefa; /* Light blue */
-            text-shadow: 0 0 10px #87cefa; /* Glowing effect */
+            color: #87cefa; 
+            text-shadow: 0 0 10px #87cefa; 
         }
 
         .cake-message a {
-            color: #87cefa; /* Light blue */
+            color: #87cefa; 
             text-decoration: none;
             transition: color 0.3s ease, text-shadow 0.3s ease;
         }
 
         .cake-message a:hover {
-            color: #141997; /* Extreme blue on hover */
-            text-shadow: 0 0 15px #141997; /* Extreme blue glow on hover */
+            color: #141997; 
+            text-shadow: 0 0 15px #141997; 
         }
 
-        /* Marquee effect replacement */
-        .marquee {
-            display: inline-block;
-            animation: marquee 10s linear infinite;
-            white-space: nowrap;
-        }
-
-        @keyframes marquee {
-            from {
-                transform: translateX(100%);
-            }
-            to {
-                transform: translateX(-100%);
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="header">
         <div class="section-container">
-            <h1>To-be-here-for-you.com</h1>
+            <h1>Tobeherefor-you.com</h1>
             <a href="https://blue-clouds4.github.io/" target="_blank">~blue_clouds</a>
         </div>
     </div>
@@ -321,7 +305,7 @@ try {
 
         <div class="section-container">
             <h2>What's next</h2>
-            <p>Plans include building a custom reinforcement learning (RL) model to stimulate it with a real world</p>
+            <p>make the website look cool,with a cooler domain and make it so that everyone can access it.</p>
             <hr>
         </div>
     </div>
